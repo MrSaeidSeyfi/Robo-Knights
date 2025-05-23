@@ -35,6 +35,46 @@ Robo-Knights/
 ├── setup.py                       # Package setup file
 ```
 
+## Usage
+
+### Running the Project
+
+The project supports three main modes of operation:
+
+1. **Training Mode**
+```bash
+python main.py --mode train --episodes 100
+```
+This will train two agents against each other for the specified number of episodes and save their models.
+
+2. **Play Mode**
+```bash
+python main.py --mode play --model1 models/agent1.pth --model2 models/agent2.pth
+```
+This will run a game between two agents using the specified model files.
+
+3. **Visualization Mode**
+```bash
+python main.py --mode visualize --model1 models/agent1.pth --model2 models/agent2.pth
+```
+This will run a game with a graphical interface showing the chess board and moves.
+
+### Model Management
+
+- Models are saved in the `models/` directory
+- Default model paths are `models/agent1.pth` and `models/agent2.pth`
+- If a model file is not found, the system will automatically use a random agent instead
+- You can use different models by specifying their paths with the `--model1` and `--model2` arguments
+- To train new models, use the training mode and they will be saved automatically
+
+Example of using custom model paths:
+```bash
+python main.py --mode play --model1 models/my_custom_agent.pth --model2 models/opponent.pth
+```
+
+## Results
+
+ 
 ## Resources
 
 - [Chess Piece Images](https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces)
