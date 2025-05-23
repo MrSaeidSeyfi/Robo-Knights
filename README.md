@@ -69,10 +69,14 @@ This will run a game with a graphical interface showing the chess board and move
 
 Example of using custom model paths:
 ```bash
-python main.py --mode play --model1 models/my_custom_agent.pth --model2 models/opponent.pth
+python main.py --mode play --model1 models/custom_agent.pth --model2 models/opponent.pth
 ```
 
 ## Results
+
+
+https://github.com/user-attachments/assets/1c212c11-6c38-4bb9-9c30-2a69424a3db6
+
 
  
 ## Resources
